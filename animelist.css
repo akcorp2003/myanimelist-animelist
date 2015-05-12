@@ -1,0 +1,353 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-MVlzYkRVc0k0Q0k);
+
+/*
+Got a question or want to learn more? Try this link:
+http://myanimelist.net/forum/?topicid=419405&show=0#post1
+*/
+
+/*
+BACKGROUND IMAGE
+This is the main background image for the whole page.
+Change the image link to the background you want!
+
+If you're not seeing a background, make sure you are copied the
+entire CSS code or added any new background image codes correctly.
+Also your image link may be broken, try uploading a new background then!
+*/
+
+body {
+background-image:
+url(http://i.imgur.com/6zD8bZR.jpg);
+background-attachment: fixed;
+}
+
+/*
+REPOSITION MAIN BACKGROUND
+Change the position your background starts on your screen from with the two properties after "background-position" below.
+
+You replace 'center' and '43%' with two other properties, they can be any of the following: left, top, bottom, right, or center.
+
+So if you want your background to start from the center of the screen, use "center center" after background-position in the code below, replacing "center 43%".
+If you want it to start from the top and left, use "top left"
+If you want it to start from the top and center, use "top center".
+If you want it to start from the right and top, use "right top"
+If you want it to start from the right and bottom, use "right bottom"
+and so forth...
+
+Additionally, you can change "left" to a % to determine how far left or right the background starts from. For example "30% top" will start the background from the top but 30% of the pic's width from the left of the layout. You can also change top to a % to change the amount you want to start it from the top or bottom.
+*/
+
+
+body{
+background-position: top left 30%;
+}
+
+
+/*
+HEADER COLOR AND FONT
+These codes control the main headers' fonts and colors. Every header is above each part of your list (they say things like Currently Watching, Completed, Dropped, etc). if you don't want a solid color there, go to the line that starts with background-color and replace it the color type (blue for example) with the word "transparent" (no quotations).
+*/
+
+.header_title {
+background-color:blue;
+color:yellow;
+font-family: 'Franklin Gothic Medium', 'Franklin Gothic', Arial, sans-serif;
+font-size:48px;
+}
+
+
+
+/*
+SUB-HEADERS BACKGROUND COLOR COLOR
+Below each main header is the sub-header which says Score, Episodes, Tags, etc.
+*/
+
+.table_header {
+background-color:navy;
+}
+
+
+
+/*
+ANIME/MANGA TITLE FONTS
+This is the type and color of the anime/manga titles on your list, like Bleach, Vampire Knight, etc.
+*/
+
+.animetitle, .animetitle:visited {
+color:cyan;
+font-family:Verdana, Geneva, sans-serif;
+font-size:14px;
+}
+
+
+
+/*
+LIST FONTS
+This is the type and color for more of the numbers, links, and words on the list itself!
+*/
+
+.td1, .td2, a, a:visited, .category_totals, .table_header, #grand_totals, #copyright {
+color:white;
+font-family:Lucida Grande;
+}
+
+
+
+/*
+LIST WIDTH
+Use this to increase the width of your list!
+*/
+
+#list_surround {
+width:900px;
+}
+
+
+
+/*OTHER CODES
+Important codes for the layout's setup. Don't mess with these unless you know exactly what you're doing. If you want to customize more on the page, use the link at the top of this CSS, or ask in my club!
+*/
+
+
+body {
+font-weight: light;
+background-repeat: no-repeat;
+background-color: black;
+}
+#list_surround {
+margin:auto;
+background-image:url();
+}
+a {
+text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover, a:visited:hover {
+color:red;
+text-decoration:underline;
+}
+.category_totals,
+.td1,
+.td2,
+#grand_totals,
+#copyright {
+background-image:url(http://img15.imageshack.us/img15/228/frame6518.png);
+border-width:0;
+padding:2px;
+}
+
+.category_totals:HOVER,
+.td1:HOVER,
+.td2:HOVER,
+#grand_totals:HOVER,
+#copyright:HOVER {background-color:navy;
+border-width:0;
+padding:2px;
+}
+#copyright:after {
+content: " Custom CSS by Shishio-kun. Google 'Shishio's Custom Lists' for more designs or info.";
+}
+
+
+
+.status_selected {
+background-color:black;
+padding:2px;
+color:white;
+text-decoration: blink;
+}
+.status_not_selected {
+background-color:black;
+padding:2px;
+color:white;
+}
+.status_selected a{
+color:cyan;
+}
+.status_not_selected a{
+color:white;
+}
+
+
+
+.thickbox {
+color:cyan;
+font-family:fantasy;
+font-size:12px;
+}
+.header_title {
+height:52px;
+padding:2px;
+}
+.table_header {
+border-width:0;
+font-weight:bold;
+padding:2px;
+}
+.category_totals {
+height:30px;
+}
+#copyright, #grand_totals {
+text-align: center;
+margin:0 auto;
+}
+
+/*************************************************
+BEGIN CUSTOMIZED PORTION
+*************************************************/
+
+/************************************************/
+
+/* BUTTONS ON TOP*/
+
+/*
+LINK COLOR
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: #EEEEEE;
+text-decoration: none;
+text-shadow: none;
+}
+a:hover {
+color: #3F1786;
+text-shadow: 0 1px rgba(255, 255, 255, 0.15);
+}
+
+
+
+/* CATEGORY LINKS */
+.status_not_selected, .status_selected {
+border: 0 none !important;
+height: auto !important;
+padding: 0 8px;
+text-align: center !important;
+width: 16.667% !important;
+}
+.status_not_selected a, .status_selected a {
+background-color: rgba(64, 60, 90, 0.6);
+border-color: rgba(48, 44, 64, 0.5);
+border-radius: 2px 2px 2px 2px;
+border-style: solid;
+border-width: 1px;
+color: #FFFFFF;
+display: block !important;
+font-weight: bold;
+padding: 8px;
+text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.status_selected a {
+background-color: rgba(180, 32, 48, 0.6);
+border-color: rgba(164, 16, 32, 0.5);
+}
+.status_not_selected a:hover {
+background-color: #403C5A;
+border-color: #201C3A;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.status_selected a:hover {
+background-color: #B42030;
+border-color: rgba(148, 0, 24, 0.5);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+/********************************************/
+
+/* SHIFT LIST TO THE LEFT */
+
+#list_surround {
+position: absolute !important;
+left: 1px !important;}
+
+/******************************************/
+
+/*
+TRANSISTIONS!!
+*/
+.animetitle:before {
+content: "";
+height: 0px;
+width: 0px;
+margin-left:0;
+margin-top:10px;
+display:inline-block !important;
+position: absolute;
+background-size: contain;
+transition: all 0.4s ease-in-out;
+}
+
+.animetitle:hover:before {
+content: "CLICK RED MORE FOR OP MUSIC!!";
+color: yellow;
+margin-left: 950px;
+margin-top: -50px;
+border-bottom-left-radius:7px;
+border-bottom-right-radius:7px;
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+box-shadow:rgba(63, 52, 60, 0.55) 0 0 8px 8px;
+padding-right:150px;
+padding-top:220px !important;
+background-color:transparent;
+background-repeat:no-repeat no-repeat;
+background-size:cover;
+position:absolute;
+z-index:1;
+}
+
+/*********************************************/
+
+/* CONTROL MORE BUTTON */
+
+#list_surround small a {
+background: none repeat scroll 0 0 red;
+color: cyan;
+}
+
+/***************************************/
+
+/*EDIT THE EDIT BUTTON*/
+a.List_LightBox {
+background: none repeat scroll 0 0 navy !important;
+color: navy;
+}
+
+/******************************************/
+
+/*CUSTOMIZE THE MORE AREA*/
+
+.borderRBL {
+background: url("http://i.imgur.com/A4Vc9Px.png") no-repeat scroll 0 0 transparent !important;
+color: transparent;
+font-size: 0;
+height: 368px;
+left: 0px;
+right: 10px;
+padding-bottom: 0;
+padding-right: 381px;
+position: relative;
+}
+.borderRBL:hover {
+background: url("http://i.imgur.com/A4Vc9Px.png") no-repeat scroll 0 0 black !important;
+height: 368px;
+}
+
+/*******************************************/
+
+/*CUSTOMIZE YOUTUBE VIDEO SIZE*/
+object[classid*=":D27CDB6E-AE6D-11cf-96B8-444553540000"], object[codebase*="swflash.cab"], object[data*=".swf"], object[type="application/x-shockwave-flash"], object[src*=".swf"], embed[type="application/x-shockwave-flash"], embed[src*=".swf"], embed[allowaccess], embed[flashvars], embed[wmode] {
+height: 100% !important;
+width: 100% !important;
+}
+
+object[classid*=":D27CDB6E-AE6D-11cf-96B8-444553540000"]:hover, object[codebase*="swflash.cab"]:hover, object[data*=".swf"]:hover, object[type="application/x-shockwave-flash"]:hover, object[src*=".swf"]:hover, embed[type="application/x-shockwave-flash"]:hover, embed[src*=".swf"]:hover, embed[allowaccess]:hover, embed[flashvars]:hover, embed[wmode]:hover {
+height: 100%;
+width: 100%;
+}

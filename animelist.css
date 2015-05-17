@@ -151,27 +151,6 @@ content: " Custom CSS by Shishio-kun. Google 'Shishio's Custom Lists' for more d
 }
 
 
-
-.status_selected {
-background-color:black;
-padding:2px;
-color:white;
-text-decoration: blink;
-}
-.status_not_selected {
-background-color:black;
-padding:2px;
-color:white;
-}
-.status_selected a{
-color:cyan;
-}
-.status_not_selected a{
-color:white;
-}
-
-
-
 .thickbox {
 color:cyan;
 font-family:fantasy;

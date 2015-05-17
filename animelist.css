@@ -313,7 +313,7 @@ content: "";
 /*CUSTOMIZE THE MORE AREA*/
 
 .borderRBL {
-background: url("http://i.imgur.com/A4Vc9Px.png") no-repeat scroll 0 0 transparent !important;
+background: url("http://i.imgur.com/A4Vc9Px.png") repeat scroll 0 0 transparent !important;
 color: transparent;
 font-size: 0;
 height: 368px;
@@ -324,7 +324,7 @@ padding-right: 381px;
 position: relative;
 }
 .borderRBL:hover {
-background: url("http://i.imgur.com/A4Vc9Px.png") no-repeat scroll 0 0 black !important;
+background: url("http://i.imgur.com/A4Vc9Px.png") repeat scroll 0 0 black !important;
 height: 368px;
 }
 
